@@ -1,0 +1,792 @@
+/* Padding */
+.p-0  { padding: 0rem; }
+.p-1  { padding: 0.25rem; }
+.p-2  { padding: 0.5rem; }
+.p-3  { padding: 0.75rem; }
+.p-4  { padding: 1rem; }
+.p-5  { padding: 1.25rem; }
+.p-6  { padding: 1.5rem; }
+.p-8  { padding: 2rem; }
+.p-10 { padding: 2.5rem; }
+.p-12 { padding: 3rem; }
+.p-16 { padding: 4rem; }
+
+/* Padding sides */
+
+.pt-1  { padding-top: 0.25rem; }
+.pr-1  { padding-right: 0.25rem; }
+.pb-1  { padding-bottom: 0.25rem; }
+.pl-1  { padding-left: 0.25rem; }
+
+.pt-2  { padding-top: 0.5rem; }
+.pr-2  { padding-right: 0.5rem; }
+.pb-2  { padding-bottom: 0.5rem; }
+.pl-2  { padding-left: 0.5rem; }
+
+.py-2  { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.px-2  { padding-left: 0.5rem; padding-right: 0.5rem; }
+
+/* Margin */
+.m-0  { margin: 0rem; }
+.m-1  { margin: 0.25rem; }
+.m-2  { margin: 0.5rem; }
+.m-3  { margin: 0.75rem; }
+.m-4  { margin: 1rem; }
+.m-5  { margin: 1.25rem; }
+.m-6  { margin: 1.5rem; }
+.m-8  { margin: 2rem; }
+
+/* Margin sides */
+.mt-0  { margin-top: 0rem}
+.mt-1  { margin-top: 0.25rem; }
+.mr-1  { margin-right: 0.25rem; }
+.mb-1  { margin-bottom: 0.25rem; }
+.ml-1  { margin-left: 0.25rem; }
+
+.mt-2  { margin-top: 0.5rem; }
+.mb-2  { margin-bottom: 0.5rem; }
+
+.mx-2  { margin-left: 0.5rem; margin-right: 0.5rem; }
+.my-2  { margin-top: 0.5rem; margin-bottom: 0.5rem; }
+
+/* Font Size */
+.text-xs   { font-size: 0.75rem !important; }
+.text-sm   { font-size: 0.875rem !important; }
+.text-base { font-size: 1rem !important; }
+.text-lg   { font-size: 1.125rem !important; }
+.text-xl   { font-size: 1.25rem !important; }
+.text-2xl  { font-size: 1.5rem !important; }
+.text-3xl  { font-size: 1.875rem !important; }
+.text-4xl  { font-size: 2.25rem !important; }
+.text-5xl  { font-size: 3rem !important; }
+.text-6xl  { font-size: 3.75rem !important; }
+
+/* Font Style */
+.italic      { font-style: italic; }
+.not-italic  { font-style: normal; }
+.oblique     { font-style: oblique; }
+
+/* Font Weight */
+.font-thin      { font-weight: 100; }
+.font-extralight{ font-weight: 200; }
+.font-light     { font-weight: 300; }
+.font-normal    { font-weight: 400; }
+.font-medium    { font-weight: 500; }
+.font-semibold  { font-weight: 600; }
+.font-bold      { font-weight: 700; }
+.font-extrabold { font-weight: 800; }
+.font-black     { font-weight: 900; }
+
+ /* ==========================================================================
+   Google Fonts Import
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&family=Source+Code+Pro:wght@200;300;400;500;600;700;900&display=swap');
+
+/* ==========================================================================
+   Variables
+   ========================================================================== */
+
+// Colors
+$colors: (
+  "primary": #007bff,
+  "secondary": #6c757d,
+  "success": #28a745,
+  "danger": #dc3545,
+  "warning": #ffc107,
+  "info": #17a2b8,
+  "light": #f8f9fa,
+  "dark": #343a40,
+  "white": #ffffff,
+  "black": #000000,
+  "transparent": transparent,
+  "body": #212529,
+  "muted": #6c757d,
+  // Grays
+  "gray-100": #f8f9fa,
+  "gray-200": #e9ecef,
+  "gray-300": #dee2e6,
+  "gray-400": #ced4da,
+  "gray-500": #adb5bd,
+  "gray-600": #6c757d,
+  "gray-700": #495057,
+  "gray-800": #343a40,
+  "gray-900": #212529,
+  // Social Colors (examples)
+  "facebook": #3b5998,
+  "twitter": #1da1f2,
+  "linkedin": #0077b5,
+  "youtube": #ff0000,
+  "instagram": #e1306c
+);
+
+// Spacing unit and scale
+$spacer: 0.25rem;
+$spacers: (
+  0: 0,
+  1: $spacer,        // 0.25rem
+  2: $spacer * 2,    // 0.5rem
+  3: $spacer * 3,    // 0.75rem
+  4: $spacer * 4,    // 1rem
+  5: $spacer * 5,    // 1.25rem
+  6: $spacer * 6,    // 1.5rem
+  7: $spacer * 7,    // 1.75rem
+  8: $spacer * 8,    // 2rem
+  9: $spacer * 9,    // 2.25rem
+  10: $spacer * 10,   // 2.5rem
+  11: $spacer * 11,   // 2.75rem
+  12: $spacer * 12,   // 3rem
+  14: $spacer * 14,   // 3.5rem
+  16: $spacer * 16,   // 4rem
+  20: $spacer * 20,   // 5rem
+  24: $spacer * 24,   // 6rem
+  auto: auto
+);
+
+// Font Families
+$font-family-sans-serif: 'Open Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: 'Merriweather', Georgia, "Times New Roman", Times, serif;
+$font-family-monospace: 'Source Code Pro', SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+$font-family-cairo: 'Cairo', sans-serif;
+$font-family-roboto: 'Roboto', sans-serif;
+$font-family-lato: 'Lato', sans-serif;
+$font-family-montserrat: 'Montserrat', sans-serif;
+$font-family-monospace1 :  monospace ;
+$font-family-cursive: "Times New Roman", Times, serif;		;
+// Font Sizes
+  $font-sizes: (
+    xs: 0.75rem,    // 12px
+    sm: 0.875rem,   // 14px
+    base: 1rem,     // 16px
+    lg: 1.125rem,   // 18px
+    xl: 1.25rem,    // 20px
+    "2xl": 1.5rem,  // 24px
+    "3xl": 1.875rem,// 30px
+    "4xl": 2.25rem, // 36px
+    "5xl": 3rem,    // 48px
+    "6xl": 3.75rem, // 60px
+    "7xl": 4.5rem,  // 72px
+    "8xl": 6rem,    // 96px
+    "9xl": 8rem     // 128px
+  );
+
+// Font Weights
+$font-weights: (
+  thin: 100,
+  extralight: 200,
+  light: 300,
+  normal: 400,
+  medium: 500,
+  semibold: 600,
+  bold: 700,
+  extrabold: 800,
+  black: 900
+);
+
+// Border Radius
+$border-radius-values: (
+  none: 0,
+  sm: 0.125rem,   // 2px
+  DEFAULT: 0.25rem,  // 4px
+  md: 0.375rem,   // 6px
+  lg: 0.5rem,     // 8px
+  xl: 0.75rem,    // 12px
+  "2xl": 1rem,    // 16px
+  "3xl": 1.5rem,  // 24px
+  full: 9999px
+);
+
+// Box Shadows
+$box-shadows: (
+  sm: "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+  DEFAULT: "0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06)",
+  md: "0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)",
+  lg: "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
+  xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04)",
+  "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)",
+  inner: "inset 0 2px 4px 0 rgba(0, 0, 0, 0.06)",
+  none: "none"
+);
+
+// Breakpoints for responsive design
+$breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+/* ==========================================================================
+   Mixins
+   ========================================================================== */
+
+// Responsive mixin
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn "Breakpoint `#{$breakpoint}` not found.";
+  }
+}
+
+/* ==========================================================================
+   Reset & Base (Optional, you might have this elsewhere)
+   ========================================================================== */
+ 
+
+/* ==========================================================================
+   Spacing (Padding & Margin)
+   ========================================================================== */
+
+$sides: (
+  t: top,
+  r: right,
+  b: bottom,
+  l: left
+);
+$xy-sides: (
+  x: (left, right),
+  y: (top, bottom)
+);
+
+@each $prop-abbr, $prop-full in (p: padding, m: margin) {
+  // All sides: .p-1, .m-1
+  @each $size-name, $size-value in $spacers {
+    .#{$prop-abbr}-#{$size-name} { #{$prop-full}: $size-value; }
+  }
+
+  // Individual sides: .pt-1, .mr-2
+  @each $side-abbr, $side-full in $sides {
+    @each $size-name, $size-value in $spacers {
+      .#{$prop-abbr}#{$side-abbr}-#{$size-name} { #{$prop-full}-#{$side-full}: $size-value; }
+    }
+  }
+
+  // X and Y axis: .px-1, .my-2
+  @each $axis-abbr, $axis-sides in $xy-sides {
+    @each $size-name, $size-value in $spacers {
+      .#{$prop-abbr}#{$axis-abbr}-#{$size-name} {
+        @each $side in $axis-sides {
+          #{$prop-full}-#{$side}: $size-value;
+        }
+      }
+    }
+  }
+}
+
+// Negative margins (example for top only, can be extended)
+@each $size-name, $size-value in $spacers {
+  @if $size-value != 0 and $size-value != auto {
+    .-mt-#{$size-name} { margin-top: -$size-value; }
+    // Add more for -mr, -mb, -ml, -mx, -my if needed
+  }
+}
+
+
+/* ==========================================================================
+   Typography
+   ========================================================================== */
+
+// Font Family
+.font-sans       { font-family: $font-family-sans-serif; }
+.font-serif      { font-family: $font-family-serif; }
+.font-mono       { font-family: $font-family-monospace; }
+.font-cairo      { font-family: $font-family-cairo; }
+.font-roboto     { font-family: $font-family-roboto; }
+.font-lato       { font-family: $font-family-lato; }
+.font-montserrat { font-family: $font-family-montserrat; }
+.font-monospace1 { font-family: $font-family-monospace1; }
+.font-cursive { font-family: $font-family-cursive; }
+
+// Font Size
+@each $name, $size in $font-sizes {
+  .text-#{$name} { font-size: $size !important;}
+  
+}
+
+// Font Weight
+@each $name, $weight in $font-weights {
+  .font-#{$name} { font-weight: $weight !important; }
+}
+
+// Text Alignment
+.text-left   { text-align: left; }
+.text-center { text-align: center; }
+.text-right  { text-align: right; }
+.text-justify{ text-align: justify; }
+
+@each $bp-name, $bp-value in $breakpoints {
+  @include respond-to($bp-name) {
+    .text-#{$bp-name}-left    { text-align: left; }
+    .text-#{$bp-name}-center  { text-align: center; }
+    .text-#{$bp-name}-right   { text-align: right; }
+    .text-#{$bp-name}-justify { text-align: justify; }
+  }
+}
+
+// Text Color
+@each $name, $color in $colors {
+  .text-#{$name} { color: $color; }
+  // Add hover states if needed: .hover\:text-#{$name}:hover { color: $color; }
+}
+
+// Text Decoration
+.no-underline { text-decoration: none; }
+.underline    { text-decoration: underline; }
+.line-through { text-decoration: line-through; }
+
+// Text Transform
+.uppercase  { text-transform: uppercase; }
+.lowercase  { text-transform: lowercase; }
+.capitalize { text-transform: capitalize; }
+.normal-case{ text-transform: none; }
+
+// Line Height
+.leading-none    { line-height: 1; }
+.leading-tight   { line-height: 1.25; }
+.leading-snug    { line-height: 1.375; }
+.leading-normal  { line-height: 1.5; }
+.leading-relaxed { line-height: 1.625; }
+.leading-loose   { line-height: 2; }
+
+/* ==========================================================================
+   Backgrounds
+   ========================================================================== */
+
+// Background Color
+@each $name, $color in $colors {
+  .bg-#{$name} { background-color: $color; }
+}
+
+@each $name, $color in $colors {
+  .bg-hover-#{$name}:hover {
+    background-color: $color !important;
+  }
+}
+// Background Gradients (simple examples)
+.bg-gradient-to-t { background-image: linear-gradient(to top, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-tr{ background-image: linear-gradient(to top right, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-r { background-image: linear-gradient(to right, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-br{ background-image: linear-gradient(to bottom right, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-b { background-image: linear-gradient(to bottom, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-bl{ background-image: linear-gradient(to bottom left, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-l { background-image: linear-gradient(to left, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+.bg-gradient-to-tl{ background-image: linear-gradient(to top left, var(--gradient-from, transparent), var(--gradient-to, transparent)); }
+
+// Gradient color stops (use with CSS custom properties)
+// Example: <div class="bg-gradient-to-r from-primary to-secondary">...</div>
+@each $name, $color in $colors {
+  .from-#{$name} { --gradient-from: #{$color}; }
+  .to-#{$name}   { --gradient-to: #{$color}; }
+  // .via-#{$name}  { --gradient-stops: var(--gradient-from), #{$color}, var(--gradient-to); } // More advanced
+}
+
+// Background Opacity (use with RGBA or if you have separate opacity utilities)
+// .bg-opacity-50 (would need a utility like .opacity-50 and apply it to background color)
+
+// Background Image Utilities
+.bg-cover    { background-size: cover; }
+.bg-contain  { background-size: contain; }
+.bg-center   { background-position: center; }
+.bg-repeat   { background-repeat: repeat; }
+.bg-no-repeat{ background-repeat: no-repeat; }
+.bg-fixed    { background-attachment: fixed; }
+.bg-local    { background-attachment: local; }
+.bg-scroll   { background-attachment: scroll; }
+
+
+/* ==========================================================================
+   Borders
+   ========================================================================== */
+
+// Border Width
+.border       { border-width: 1px; border-style: solid; } // Default border
+.border-0     { border-width: 0px; }
+.border-2     { border-width: 2px; border-style: solid; }
+.border-4     { border-width: 4px; border-style: solid; }
+.border-8     { border-width: 8px; border-style: solid; }
+
+.border-t     { border-top-width: 1px; border-top-style: solid; }
+.border-t-0   { border-top-width: 0px; }
+.border-t-2   { border-top-width: 2px; border-top-style: solid; }
+// ... add for r, b, l and other widths if needed
+
+.border-r     { border-right-width: 1px; border-right-style: solid; }
+.border-r-0   { border-right-width: 0px; }
+// ...
+
+.border-b     { border-bottom-width: 1px; border-bottom-style: solid; }
+.border-b-0   { border-bottom-width: 0px; }
+// ...
+
+.border-l     { border-left-width: 1px; border-left-style: solid; }
+.border-l-0   { border-left-width: 0px; }
+// ...
+
+// Border Color (default to currentcolor if not set)
+.border-current { border-color: currentColor; }
+@each $name, $color in $colors {
+  .border-#{$name} { border-color: $color; }
+}
+
+// Border Style
+.border-solid   { border-style: solid; }
+.border-dashed  { border-style: dashed; }
+.border-dotted  { border-style: dotted; }
+.border-double  { border-style: double; }
+.border-none    { border-style: none; }
+
+// Border Radius
+@each $name, $radius in $border-radius-values {
+  @if $name == "DEFAULT" {
+    .rounded { border-radius: $radius; }
+  } @else {
+    .rounded-#{$name} { border-radius: $radius; }
+  }
+}
+// Specific corners
+.rounded-t-none { border-top-left-radius: 0; border-top-right-radius: 0; }
+.rounded-r-none { border-top-right-radius: 0; border-bottom-right-radius: 0; }
+// ... add more for sm, md, lg, full etc. for t, r, b, l, tl, tr, br, bl
+
+@each $radius-name, $radius-value in $border-radius-values {
+  @if $radius-name != "DEFAULT" {
+    .rounded-t-#{$radius-name} { border-top-left-radius: $radius-value; border-top-right-radius: $radius-value; }
+    .rounded-r-#{$radius-name} { border-top-right-radius: $radius-value; border-bottom-right-radius: $radius-value; }
+    .rounded-b-#{$radius-name} { border-bottom-left-radius: $radius-value; border-bottom-right-radius: $radius-value; }
+    .rounded-l-#{$radius-name} { border-top-left-radius: $radius-value; border-bottom-left-radius: $radius-value; }
+    .rounded-tl-#{$radius-name}{ border-top-left-radius: $radius-value; }
+    .rounded-tr-#{$radius-name}{ border-top-right-radius: $radius-value; }
+    .rounded-br-#{$radius-name}{ border-bottom-right-radius: $radius-value; }
+    .rounded-bl-#{$radius-name}{ border-bottom-left-radius: $radius-value; }
+  }
+}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+// Display
+.hidden         { display: none; }
+.block          { display: block; }
+.inline-block   { display: inline-block; }
+.inline         { display: inline; }
+.flex           { display: flex; }
+.inline-flex    { display: inline-flex; }
+.grid           { display: grid; }
+.inline-grid    { display: inline-grid; }
+.table          { display: table; }
+.table-row      { display: table-row; }
+.table-cell     { display: table-cell; }
+
+// Responsive Display
+@each $bp-name, $bp-value in $breakpoints {
+  @include respond-to($bp-name) {
+    .#{$bp-name}\:hidden         { display: none; }
+    .#{$bp-name}\:block          { display: block; }
+    .#{$bp-name}\:inline-block   { display: inline-block; }
+    .#{$bp-name}\:inline         { display: inline; }
+    .#{$bp-name}\:flex           { display: flex; }
+    .#{$bp-name}\:inline-flex    { display: inline-flex; }
+    .#{$bp-name}\:grid           { display: grid; }
+    // Add more as needed
+  }
+}
+
+// Position
+.static   { position: static; }
+.relative { position: relative; }
+.absolute { position: absolute; }
+.fixed    { position: fixed; }
+.sticky   { position: sticky; top: 0; /* Default sticky position */ }
+
+// Top / Right / Bottom / Left (can be extended with $spacers map)
+.top-0    { top: 0; }
+.right-0  { right: 0; }
+.bottom-0 { bottom: 0; }
+.left-0   { left: 0; }
+.inset-0  { top: 0; right: 0; bottom: 0; left: 0; }
+.inset-x-0 { left: 0; right: 0; }
+.inset-y-0 { top: 0; bottom: 0; }
+// Add .top-auto, .top-1, .top-2 etc. using $spacers if needed
+
+// Z-Index
+.z-0   { z-index: 0; }
+.z-10  { z-index: 10; }
+.z-20  { z-index: 20; }
+.z-30  { z-index: 30; }
+.z-40  { z-index: 40; }
+.z-50  { z-index: 50; }
+.z-auto{ z-index: auto; }
+
+// Overflow
+.overflow-auto    { overflow: auto; }
+.overflow-hidden  { overflow: hidden; }
+.overflow-visible { overflow: visible; }
+.overflow-scroll  { overflow: scroll; }
+.overflow-x-auto  { overflow-x: auto; }
+.overflow-y-auto  { overflow-y: auto; }
+// ... add more for x/y hidden, visible, scroll
+
+/* ==========================================================================
+   Flexbox
+   ========================================================================== */
+
+// Flex Direction
+.flex-row          { flex-direction: row; }
+.flex-row-reverse  { flex-direction: row-reverse; }
+.flex-col          { flex-direction: column; }
+.flex-col-reverse  { flex-direction: column-reverse; }
+
+// Flex Wrap
+.flex-nowrap    { flex-wrap: nowrap; }
+.flex-wrap      { flex-wrap: wrap; }
+.flex-wrap-reverse { flex-wrap: wrap-reverse; }
+
+// Align Items
+.items-start    { align-items: flex-start; }
+.items-end      { align-items: flex-end; }
+.items-center   { align-items: center; }
+.items-baseline { align-items: baseline; }
+.items-stretch  { align-items: stretch; }
+
+// Justify Content
+.justify-start   { justify-content: flex-start; }
+.justify-end     { justify-content: flex-end; }
+.justify-center  { justify-content: center; }
+.justify-between { justify-content: space-between; }
+.justify-around  { justify-content: space-around; }
+.justify-evenly  { justify-content: space-evenly; }
+
+// Flex Grow & Shrink
+.flex-grow    { flex-grow: 1; }
+.flex-grow-0  { flex-grow: 0; }
+.flex-shrink  { flex-shrink: 1; }
+.flex-shrink-0{ flex-shrink: 0; }
+.flex-1       { flex: 1 1 0%; } // common shorthand
+.flex-auto    { flex: 1 1 auto; }
+.flex-initial { flex: 0 1 auto; }
+.flex-none    { flex: none; }
+
+// Order
+.order-first { order: -9999; }
+.order-last  { order: 9999; }
+.order-none  { order: 0; }
+@for $i from 1 through 12 {
+  .order-#{$i} { order: #{$i}; }
+}
+
+/* ==========================================================================
+   Grid (Basic examples, can be expanded significantly)
+   ========================================================================== */
+
+// Grid Template Columns
+@for $i from 1 through 12 {
+  .grid-cols-#{$i} { grid-template-columns: repeat(#{$i}, minmax(0, 1fr)); }
+}
+.grid-cols-none { grid-template-columns: none; }
+
+// Grid Column Span
+.col-auto { grid-column: auto; }
+.col-span-full { grid-column: 1 / -1; }
+@for $i from 1 through 12 {
+  .col-span-#{$i} { grid-column: span #{$i} / span #{$i}; }
+}
+// Grid Column Start/End (can be auto-generated for 1-13)
+.col-start-1 { grid-column-start: 1; }
+.col-start-auto { grid-column-start: auto; }
+// ... more col-start-X, col-end-X
+
+// Gap
+@each $size-name, $size-value in $spacers {
+  .gap-#{$size-name}    { gap: $size-value; }
+  .gap-x-#{$size-name}  { column-gap: $size-value; }
+  .gap-y-#{$size-name}  { row-gap: $size-value; }
+}
+
+/* ==========================================================================
+   Sizing (Width & Height)
+   ========================================================================== */
+
+// Width
+@each $name, $value in $spacers {
+  @if $name != auto {
+    .w-#{$name} { width: $value; }
+  }
+}
+.w-auto    { width: auto; }
+.w-px      { width: 1px; }
+.w-1\/2   { width: 50%; }
+.w-1\/3   { width: 33.333333%; }
+.w-2\/3   { width: 66.666667%; }
+.w-1\/4   { width: 25%; }
+.w-3\/4   { width: 75%; }
+.w-1\/5   { width: 20%; }
+// ... more fractions
+.w-full    { width: 100%; }
+.w-screen  { width: 100vw; }
+.min-w-0     { min-width: 0px; }
+.min-w-full  { min-width: 100%; }
+.max-w-none  { max-width: none; }
+.max-w-full  { max-width: 100%; }
+.max-w-screen-sm { max-width: map-get($breakpoints, sm); }
+.max-w-screen-md { max-width: map-get($breakpoints, md); }
+// ... more max-w based on breakpoints or fixed values (xs, sm, md, lg, xl, 2xl, etc.)
+
+// Height
+@each $name, $value in $spacers {
+  @if $name != auto {
+    .h-#{$name} { height: $value; }
+  }
+}
+.h-auto    { height: auto; }
+.h-px      { height: 1px; }
+.h-full    { height: 100%; }
+.h-screen  { height: 100vh; }
+.min-h-0     { min-height: 0px; }
+.min-h-full  { min-height: 100%; }
+.min-h-screen{ min-height: 100vh; }
+.max-h-full  { max-height: 100%; }
+.max-h-screen{ max-height: 100vh; }
+
+
+/* ==========================================================================
+   Effects (Shadows, Opacity)
+   ========================================================================== */
+
+// Box Shadow
+@each $name, $shadow in $box-shadows {
+  @if $name == "DEFAULT" {
+    .shadow { box-shadow: $shadow; }
+  } @else {
+    .shadow-#{$name} { box-shadow: $shadow; }
+  }
+}
+
+// Opacity
+.opacity-0   { opacity: 0; }
+.opacity-5   { opacity: 0.05; }
+.opacity-10  { opacity: 0.1; }
+.opacity-20  { opacity: 0.2; }
+.opacity-25  { opacity: 0.25; }
+.opacity-30  { opacity: 0.3; }
+.opacity-40  { opacity: 0.4; }
+.opacity-50  { opacity: 0.5; }
+.opacity-60  { opacity: 0.6; }
+.opacity-70  { opacity: 0.7; }
+.opacity-75  { opacity: 0.75; }
+.opacity-80  { opacity: 0.8; }
+.opacity-90  { opacity: 0.9; }
+.opacity-95  { opacity: 0.95; }
+.opacity-100 { opacity: 1; }
+
+/* ==========================================================================
+   Interactivity (Cursor, User Select)
+   ========================================================================== */
+.cursor-auto        { cursor: auto; }
+.cursor-default     { cursor: default; }
+.cursor-pointer     { cursor: pointer; }
+.cursor-wait        { cursor: wait; }
+.cursor-text        { cursor: text; }
+.cursor-move        { cursor: move; }
+.cursor-not-allowed { cursor: not-allowed; }
+
+.select-none { user-select: none; }
+.select-text { user-select: text; }
+.select-all  { user-select: all; }
+.select-auto { user-select: auto; }
+
+/* ==========================================================================
+   Transitions & Animations (Basic setup)
+   ========================================================================== */
+.transition-none    { transition-property: none; }
+.transition-all     { transition-property: all; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); transition-duration: 150ms; }
+.transition         { transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+                      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+                      transition-duration: 150ms; }
+// Durations
+.duration-75   { transition-duration: 75ms; }
+.duration-100  { transition-duration: 100ms; }
+.duration-150  { transition-duration: 150ms; }
+.duration-200  { transition-duration: 200ms; }
+.duration-300  { transition-duration: 300ms; }
+.duration-500  { transition-duration: 500ms; }
+.duration-700  { transition-duration: 700ms; }
+.duration-1000 { transition-duration: 1000ms; }
+
+// Timing functions
+.ease-linear    { transition-timing-function: linear; }
+.ease-in        { transition-timing-function: cubic-bezier(0.4, 0, 1, 1); }
+.ease-out       { transition-timing-function: cubic-bezier(0, 0, 0.2, 1); }
+.ease-in-out    { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+
+// Basic Spin Animation
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes ping {
+  75%, 100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+.animate-ping {
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+@keyframes pulse {
+  50% {
+    opacity: .5;
+  }
+}
+.animate-pulse {
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(-25%);
+    animation-timing-function: cubic-bezier(0.8,0,1,1);
+  }
+  50% {
+    transform: none;
+    animation-timing-function: cubic-bezier(0,0,0.2,1);
+  }
+}
+.animate-bounce {
+  animation: bounce 1s infinite;
+}
+
+/* ==========================================================================
+   Accessibility
+   ========================================================================== */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.not-sr-only {
+  position: static;
+  width: auto;
+  height: auto;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+  white-space: normal;
+}

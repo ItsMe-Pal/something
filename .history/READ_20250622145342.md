@@ -1,0 +1,16 @@
+PWA Setup: باستخدام Vite أو Parcel (خفيف وسريع)
+
+TensorFlow.js ← لرؤية الكمبيوتر
+
+transformers.js (لو محتاج تحليل نصوص)
+
+Canvas API / WebGL ← لتطبيق الـ effects
+
+Wishper ← عشان تاخد أوامر صوتية لو عايز
+
+
+
+
+[WHAT_WE_DOING_NOW]
+- هنبني recognizer للفيديو ولما اليوزر يتكلم هنبعت الكلام لل wishper عشان نعرف هو قال ايه
+- 

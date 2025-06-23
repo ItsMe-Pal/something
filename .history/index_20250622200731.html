@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+
+    <link rel="stylesheet" href="/manifest.json">
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"> </script>
+
+
+    <link rel="stylesheet" href="/styles/main.css">
+
+
+</head>
+<body>
+    <div id="bg"> 
+    
+    <div class="relative flex gap-[2%] flex-wrap content-start">
+        <div class="w-full h-[5%]">
+            <header style="background-color: #0f1e2973;">
+                <nav class="mx-auto flex flex-col sm:flex-row max-w-7xl items-center justify-center gap-4 sm:gap-8 md:gap-12 p-4 sm:p-6 lg:px-8" aria-label="Global">
+                    <div class="flex-shrink-0 flex justify-center sm:justify-start w-full sm:w-auto mb-2 sm:mb-0">
+                        <img class="h-16 w-16 sm:h-20 sm:w-20 md:h-100 md:w-100 rounded-xl" src="/imgs/icons/icon-512x512.png" alt="" />
+                    </div>
+                    <div class="flex flex-col items-center sm:items-start text-center sm:text-left">
+                        <span class="word1 text-2xl sm:text-3xl md:text-4xl lg:text-5xl">MUSIC</span>
+                        <p class="word2 text-base sm:text-lg md:text-xl">Saved me once</p>
+                    </div>
+                </nav>
+            </header>
+        </div>
+        <div class="grow h-3/4">
+            <video id="video" autoplay playsinline></video>
+
+        </div>
+        <div class="w-1/6 h-3/4">Sidebar</div>
+        <div class="w-full h-[5%]">
+            <button class="brutalist-button">
+                <div class="-logo">
+                    <img class="-logo-icon" src="/imgs/icons/icon-512x512.png" alt="">
+                </div>
+                <div class="button-text">
+                    <a href="http://">
+                        <span>Join</span>
+                        <span>Our team</span>
+                    </a>
+                </div>
+              </button>
+              
+        </div>
+      </div>
+
+    </div>
+    <script src="/src/main.js"></script>
+
+
+ 
+      
+</body>
+</html>

@@ -1,0 +1,66 @@
+ 
+{
+    "name" : "Full app name",
+               
+    "short_name" : "SHORT NAME FOR APP",
+     "start_url": "/index.html",
+                // How u want ur app to start like? if 'standalone' then u mean u want it to start like a progressive app and that what we wanted actually BUT if u typed "browser" this means the browser features like "Address bar" "nav bar" ...etc will be existed and ur app will open like in a browser tab look 
+    "display" : "standalone",
+
+                // The background of the splash screen when we first time starts the application
+    "background_color" : "#FFF",
+
+                // This will color the little bar top of your application
+    "theme_color" : "#FFE1C4",
+
+                // How your application u want it to open [landscape OR portrait] , then in our case we want portrait
+    "orientation" : "portrait-primary",
+
+                // These icons should be for different devices , then u need to set a standards icons to fit all different devices like samsung , ios ...etc then theres a list below for the standards icons sizes u need to stick with 
+                // U first need to add ur different icons in one place for example /imgs/icons/iconsName
+                // [72x72] , [96x96] , [512x512] , [384x384] , [192x192] , [152x152] , [144x144] , [128x128]
+    "icons":[
+        {
+            "src" : "/img/icons/icon-72x72.png",
+            "type" : "image/png",
+            "sizes" : "72x72"
+        },
+        {
+            "src" : "/img/icons/icon-96x96.png",
+            "type" : "image/png",
+            "sizes" : "96x96"
+        },
+        {
+            "src" : "/img/icons/icon-128x128.png",
+            "type" : "image/png",
+            "sizes" : "128x128"
+        },
+        {
+            "src" : "/img/icons/icon-144x144.png",
+            "type" : "image/png",
+            "sizes" : "144x144"
+        },
+        {
+            "src" : "/img/icons/icon-152x152.png",
+            "type" : "image/png",
+            "sizes" : "152x152"
+        },
+        {
+            "src" : "/img/icons/icon-192x192.png",
+            "type" : "image/png",
+            "sizes" : "192x192"
+        },
+        {
+            "src" : "/img/icons/icon-384x384.png",
+            "type" : "image/png",
+            "sizes" : "384x384"
+        },
+        {
+            "src" : "/img/icons/icon-512x512.png",
+            "type" : "image/png",
+            "sizes" : "512x512"
+        } 
+
+    ]
+}
+ 

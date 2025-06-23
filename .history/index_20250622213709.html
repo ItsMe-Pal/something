@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Camera Test</title>
+</head>
+<body>
+    <video id="video" autoplay style="width: 100%;"></video>
+    <script>
+        const videoElement = document.getElementById("video");
+        console.log("Video element:", videoElement); // تأكد إن العنصر موجود
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
+                .then(function(stream) {
+                    videoElement.srcObject = stream;
+                    videoElement.play();
+                })
+                .catch(function(error) {
+                    console.error("Error accessing camera:", error);
+                    alert("Error accessing camera: " + error.message); // إيرور بسيط
+                });
+        } else {
+            alert("Camera not supported by this browser.");
+        }
+    </script>
+</body>
+</html>
